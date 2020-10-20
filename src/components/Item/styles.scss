@@ -1,0 +1,70 @@
+@import '../../Vars.scss';
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $background-meli;
+}
+
+.item-data {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: #fff;
+  width: 1000px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-img {
+  width: 680px;
+}
+
+.item-condition {
+  font-size: 14px;
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+
+.item-title {
+  font-size: 24px;
+  padding-bottom: 32px;
+}
+
+.item-price {
+  font-size: 46px;
+  padding-bottom: 32px;
+}
+
+.item-button {
+  background-color: $button-meli;
+  color: #fff;
+  border: none;
+  height: 40px;
+  border-radius: 4px;
+  margin-right: 32px;
+}
+
+.item-description {
+  font-size: 28px;
+  width: 1000px;
+  background-color: #fff;
+}
+
+.item-description-title {
+  font-size: 28px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+}
+
+.item-description-text {
+  font-size: 16px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  padding-right: 320px;
+  color: $grey-meli;
+}

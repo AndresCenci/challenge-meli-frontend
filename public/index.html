@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge Meli Frontend</title>
+  <link rel="apple-touch-icon" href="./src/assets/static/apple-touch-icon-iphone-60x60.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./src/assets/static/apple-touch-icon-ipad-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./src/assets/static/apple-touch-icon-iphone-retina-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./src/assets/static/apple-touch-icon-ipad-retina-152x152.png">
+</head>
+<body>
+  <div id="app"></div>
+  <noscript>
+    <h3>This app needs Javascript to work</h3>
+  </noscript>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('SW registrado');
+        })
+        .catch(registrationError => {
+          console.log('SW error ', registrationError);
+        })
+      })
+    }
+  </script>
+</body>
+</html>
